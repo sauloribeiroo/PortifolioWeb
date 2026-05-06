@@ -1,110 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Saulo de Sousa Ribeiro - Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-
-    <header class="header">
-        <h1 class="header-title">Saulo de Sousa Ribeiro</h1>
-        <img src="fotorepos.jpeg" alt="Saulo de Sousa Ribeiro" class="header-image">
-        <p class="header-subtitle">Estudante de TI</p>
-    </header>
-
-    <main class="main-content container">
-
-        <section id="sobre" class="section">
-            <h2 class="section-title">Sobre mim</h2>
-            <p class="sobre-texto">
-                Sou uma pessoa autêntica, apaixonada por aprender e explorar o vasto universo da tecnologia. Busco constantemente expandir meus conhecimentos no ecossistema de desenvolvimento, com o objetivo de dominar tanto o back-end quanto o front-end.
-                Acredito que a excelência técnica deve caminhar junto ao desenvolvimento de habilidades comportamentais, pois a tecnologia é feita por e para pessoas. Minha curiosidade constante me move a encarar cada novo desafio como uma jornada de aprendizado contínuo, permitindo que eu encontre soluções criativas mesmo em contextos de alta complexidade.
-                Para mim, a tecnologia tem o poder de transformar o mundo, e estou comprometido em evoluir tanto tecnicamente e pessoalmente para ser parte ativa dessa transformação.
-            </p>
-        </section>
-
-        <section id="conhecimentos" class="section">
-            <h2 class="section-title">Conhecimentos</h2>
-            <ul class="conhecimentos-lista">
-                <li>Desenvolvimento Back-end com criação de rotas e APIs</li>
-                <li>Banco de Dados: PostgreSQL, MySQL e Firebase</li>
-                <li>Tecnologias: TypeScript, JavaScript, HTML, CSS</li>
-                <li>Back-end: Node.js, Express, Prisma ORM</li>
-                <li>Ferramentas e Cloud: Amazon AWS (S3, EC2), Postman, Prisma</li>
-                <li>Versionamento: Git, GitHub</li>
-                <li>Testes e integração com bancos de dados relacionais</li>
-                <li>Gestão de tabelas </li>
-            </ul>
-        </section>
-
-        <section id="projetos" class="section">
-            <h2 class="section-title">Projetos</h2>
-            <table class="projetos-tabela">
-                <thead>
-                    <tr>
-                        <th>Nome do Projeto</th>
-                        <th>Descrição</th>
-                        <th>Ano</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Nome do Projeto">Portifólio Web</td>
-                        <td data-label="Descrição">Portifólio pessoal simples</td>
-                        <td data-label="Ano">2026</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Nome do Projeto">Sistema de Listagem de Produtos</td>
-                        <td data-label="Descrição">Aplicação full stack para gerenciamento e listagem de produtos com interface intuitiva</td>
-                        <td data-label="Ano">2025</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Nome do Projeto">Sistema de Gestão Financeira</td>
-                        <td data-label="Descrição">Aplicação full stack para gerenciamento e listagem da movimentação financeira com foco no acompanhamento pessoal</td>
-                        <td data-label="Ano">2025</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Nome do Projeto">Robô com arduino</td>
-                        <td data-label="Descrição">Criaçao de um robô para competições no Dia T</td>
-                        <td data-label="Ano">2025</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Nome do Projeto">Marketplace GestaoAoVivo</td>
-                        <td data-label="Descrição">Criaçao de um marketplace para empresa GestaoAoVivo para negociações de obras</td>
-                        <td data-label="Ano">2024</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Nome do Projeto">Sistema GestaoAoVivo</td>
-                        <td data-label="Descrição">Manutenção do sistema de acompanhamento de obras da empresa GestaoAoVivo (back-end), envolvendo novos endpoints, gestão de novas tabelas do banco, formatação dos endpoints para o Postman</td>
-                        <td data-label="Ano">2024</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="contato" class="section">
-            <h2 class="section-title">Contato</h2>
-            <div class="contato-links">
-                <a class="contato-link" href="mailto:sauloo.ribeirooo@gmail.com">
-                    📧 E-mail
-                </a>
-                <a class="contato-link" href="https://www.linkedin.com/in/sauloribeiroo" target="_blank">
-                    💼 LinkedIn
-                </a>
-                <a class="contato-link" href="https://github.com/sauloribeiroo" target="_blank">
-                    💻 GitHub
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <p>&copy; 2026 - Saulo de Sousa Ribeiro. Todos os direitos reservados.</p>
-    </footer>
-
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
