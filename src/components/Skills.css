@@ -1,0 +1,124 @@
+.skills {
+  background: var(--bg-base);
+  position: relative;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+}
+
+.skills__header {
+  text-align: center;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__header .section-divider {
+  margin: 0 auto 20px;
+}
+
+.skills__lead {
+  max-width: 580px;
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+.skills__card {
+  background: var(--bg-white);
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-vivid);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.skills__card:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 20px 40px -16px rgba(168, 85, 247, 0.4);
+  transform: translateY(-4px);
+}
+
+.skills__card:hover::before {
+  transform: scaleX(1);
+}
+
+.skills__card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.skills__card-icon {
+  font-size: 1.6rem;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.18), rgba(124, 58, 237, 0.1));
+  border-radius: 12px;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.skills__card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.01em;
+}
+
+.skills__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills__tag {
+  padding: 8px 14px;
+  background: var(--bg-section);
+  color: var(--text-medium);
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  cursor: default;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.skills__tag:hover {
+  background: rgba(168, 85, 247, 0.15);
+  color: var(--accent-color);
+  border-color: rgba(168, 85, 247, 0.35);
+}
